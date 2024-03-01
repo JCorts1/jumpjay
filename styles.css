@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(img/stars.jpg)
+}
+
+.background__img{
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    left: 500px;
+    top: 100px;
+}
+
+#game{
+    width: 500px;
+    height: 200px;
+    position: relative;
+    left: 500px;
+    top: 100px;
+    border: 2px solid #565656
+}
+
+#character {
+    
+    width: 20px;
+    height: 50px;
+    background-color: transparent;
+    position: relative;
+    top: 150px;
+    border-radius: 2px;
+}
+
+.jumper {
+    width: 21px;
+    height: 40px;
+    position: relative;
+    top: 10px;  
+}
+.animate{
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0%{top: 150px;}
+    30%{top:100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+.energy {
+    width: 20px;
+    height: 20px;
+}
+
+#block {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0%{left:480px;}
+    100%{left:-40px;}
+
+}
